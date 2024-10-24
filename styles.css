@@ -1,0 +1,59 @@
+/* Підключення кастомного шрифту */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Grid-розмітка */
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    gap: 15px;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.task input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Респонсивність */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
